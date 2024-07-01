@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #FFD700;
+    --secondary-color: rgba(0, 0, 0, 0.5);
+    --text-color: #fff;
+    --bg-color: rgba(255, 255, 255, 0.1);
+    --hover-bg-color: rgba(224, 224, 224, 0.1);
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--hover-bg-color);
+    cursor: url('custom-cursor.png'), auto;
+}
+
+.audio-button-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.audio-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.audio-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.audio-button svg {
+    width: 30px;
+    height: 30px;
+    fill: #333;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: var(--text-color);
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    background: var(--secondary-color);
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    margin: 0 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+.location {
+    background: var(--secondary-color);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.location:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .location {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="audio-button-container">
+        <button id="toggle-audio" class="audio-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M6 6h2v12H6zm10 0h2v12h-2z"/>
+            </svg>
+        </button>
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="https://cdn.discordapp.com/attachments/1251898246075514911/1256309319184683088/video_preview_h264.mp4?ex=6683987a&is=668246fa&hm=786da3912be759ac17c4226a6063bd3b3d427fa96bbb155e5343bc154b9a8fd6&.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="content">
+        <header>
+            <h1>Company Directory</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#companies">Companies</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section id="companies">
+                <h2>Companies</h2>
+                <div class="location" id="kutub">
+                    <h3>Kutub Institution Area</h3>
+                    <ul>
+                        <li>
+                            <h4>Lal Bahadur Shastri Rashtriya Sanskrit Vidyapith</h4>
+                            <p>Email: info@slbsrsv.ac.in | Contact: 1234567890</p>
+                            <p>Address: Address: B-4, Qutub Institutional Area, Shaheed Jeet Singh Marg, Katwaria Sarai, New Delhi, Delhi 110016 | Website: <a href="https://www.slbsrsv.ac.in/" target="_blank">https://www.slbsrsv.ac.in/</a></p>
+                        </li>
+
+                        <li>
+                            <h4>Dreaming Child Pre School</h4>
+                            <p>Email: info@dreamingchild.in | Contact:  098734 59656</p>
+                            <p>Address: G5VJ+992, 15-16 Shaheed Jeet Singh Marg, Katwaria Sarai, New Delhi, Delhi 110016 | Website: <a href="https://dreamingchild.in/" target="_blank">https://dreamingchild.in/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>O. P. Jindal Auditorium (National Trust for the Handicapped)</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address: A, 2, Shaheed Jeet Singh Marg, Block A, Qutab Institutional Area, New Delhi, Delhi 110067</p>
+                        </li>
+                        <li>
+                            <h4>Department of Management Studies Vishvakarma Bhavan IIT</h4>
+                            <p>Email: <a href="https://dms.iitd.ac.in/contact/" target="_blank">https://dms.iitd.ac.in/contact/</a> | Contact: 011 2659 7034</p>
+                            <p>Address: IV Floor, Vishwakarma Bhavan, Shaheed Jeet Singh Marg, Hauz Khas, New Delhi, Delhi 110016 | Website: <a href="https://dms.iitd.ac.in/" target="_blank">https://dms.iitd.ac.in/</a></p>
+                        </li>
+                        <li>
+                            <h4>Indian Society for Technical Education</h4>
+                            <p>Email: iste@example.com | Contact: 01126513542, 9813198407, 8700067861, 9654821358, 9716950226</p>
+                            <p>Address: Shaheed Jeet Singh Marg, Block C, Katwaria Sarai, New Delhi, Delhi 110016 | Website: <a href="http://www.isteonline.in/" target="_blank">http://www.isteonline.in/</a></p>
+                            <p>Mail Sent 25.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>National Council of Education Research and Training</h4>
+                            <p>Email: dceta.ncert@nic.in | Contact: 011 2696 2580</p>
+                            <p>Address: Sri Aurobindo Marg, New Delhi-110016 | Website: <a href="https://ncert.nic.in/" target="_blank">https://ncert.nic.in/</a></p>
+                            <p>Mail Sent 25.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>Indian Olympic Association</h4>
+                            <p>Email: ioa@olympic.ind.in | Contact: 011 2685 2480</p>
+                            <p>Address: Olympic Bhawan, B-29, Qutab Institutional Area, New Delhi, Delhi 110016 | Website: <a href="https://olympic.ind.in/" target="_blank">https://olympic.ind.in/</a></p>
+                            <p>Mail Sent 25.6.2024 | Mail Sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>Population Foundation of India</h4>
+                            <p>Email: info@populationfoundation.in | Contact: 011 4389 4100</p>
+                            <p>Address: B, 28, Qutab Institutional Area Rd, opposite to Medeor Hospital, Block B, Katwaria Sarai, New Delhi, Delhi 110016 | Website: <a href="https://www.populationfoundation.in/" target="_blank">https://www.populationfoundation.in/</a></p>
+                            <p>Mail Sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>MS CASIE - Monica Sarin Center for Advanced Skills, Innovation and Entrepreneurship</h4>
+                            <p>Email: info@mscasie.com | Contact: +91 74283 96581</p>
+                            <p>Address: B, 26, NRPC Colony, Block B, Qutab Institutional Area, New Delhi, Delhi 110016 | Website: <a href="https://www.mscasie.com/" target="_blank">https://www.mscasie.com/</a></p>
+                            <p>Mail Sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>Habitat India</h4>
+                            <p>Email: hello@habitat-india.org | Contact: </p>
+                            <p>Address: C-3, Qutab Institutional Area, Block C, New Delhi, Delhi 110016 | Website: <a href="https://habitat-india.org/" target="_blank">https://habitat-india.org/</a></p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+
+                        <h4>IRIA House</h4>
+                        <p>Email: iria37@gmail.com | Contact: 011 2696 5598</p>
+                            <p>Address: IRIA House, C-5, Block C, Qutab Institutional Area, Block C, New Delhi, Delhi 110016 | Website: <a href="https://iria.org.in/" target="_blank">https://iria.org.in/</a></p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>HelpAge India</h4>
+                            <p>Email: headoffice@helpageindia.org | Contact: 011-41688955/56, 42030400</p>
+                            <p>Address: C-6, C-14, Qutab Institutional Area, Block C, New Delhi, Delhi 110016 | Website: <a href="https://www.helpageindia.org/" target="_blank">https://www.helpageindia.org/</a></p>
+                            <p>Mail sent</p>
+                        </li>
+                        <li>
+                            <h4>Nerct to HelpAge</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  </p>
+                            <p>Website:  </p>
+                        </li>
+                        <li>
+                            <h4>Nutrition Foundation of India (NFI)</h4>
+                            <p>Email: nutritionfoundationofindia@gmail.com | Contact: 098914 85605</p>
+                            <p>Address: C-13, Block C, Qutab Institutional Area, New Delhi, Delhi 110016 | Website: <a href="https://www.nutritionfoundationofindia.res.in" target="_blank">https://www.nutritionfoundationofindia.res.in</a></p>
+                            <p>Mail sent</p>
+                        </li>
+                        <li>
+                            <h4>Pro Helvetia - Swiss Arts Council Pro Helvetia</h4>
+                            <p>Email: info@prohelvetia.ch | Contact: 011 4182 5636, +41 44 267 71 71</p>
+                            <p>Address: C-11, Block C, Qutab Institutional Area, New Delhi, Delhi 110016 | Website: <a href="https://prohelvetia.ch/en/our-offices-abroad/pro-helvetia-new-delhi/?redirect_from=prohelvetia.in" target="_blank">https://prohelvetia.ch/en/our-offices-abroad/pro-helvetia-new-delhi/?redirect_from=prohelvetia.in</a></p>
+                            <p>Mail sent</p>
+                        </li>
+                        <li>
+                            <h4>Ashok Institute of Hospitality & Tourism Management</h4>
+                            <p>Email: cppp-doe@nic.in | Contact: 91 0120-4001002, +91 0120-4001005, +91 0120-4493395</p>
+                            <p>Address: Block C C-12/A, Qutab Institutional Area, New Delhi, Delhi 110016 | Website: <a href="https://itdc.co.in/institute-hospitality-tourism-management/" target="_blank">https://itdc.co.in/institute-hospitality-tourism-management/</a></p>
+                            <p>Mail sent</p>
+                        </li>
+                        <li>
+                            <h4>Indian Institute of Foreign Trade (IIFT)</h4>
+                            <p>Email:  | Contact: 011 3914 7200</p>
+                            <p>Address: Block-II, B-21, NRPC Colony, Block B, Qutab Institutional Area, New Delhi, Delhi 110016 | Website: <a href="https://www.iift.ac.in/iift/index.php" target="_blank">https://www.iift.ac.in/iift/index.php</a></p>
+                        </li>
+                        <li>
+                            <h4>RCI House - Rehabilitation Council of India</h4>
+                            <p>Email: rci-depwd@gov.in | Contact: 011 2653 2816</p>
+                            <p>Address: G5PJ+QXF B 22, Unnamed Road, NRPC Colony, Block B, Qutab Institutional Area, New Delhi, Delhi 110016 | Website: <a href="https://rehabcouncil.nic.in/" target="_blank">https://rehabcouncil.nic.in/</a></p>
+                            <p>Mail Sent 21.6.2024 | Mail sent</p>
+                        </li>
+                        <li>
+                            <h4>Kiwanis Rehabilitation & Research Centre</h4>
+                            <p>Email: kiwanis@kiwanisnd.org | Contact: </p>
+                            <p>Address: B-35, Qutub Institutional Area, New Delhi-110016</p>
+                            <p>Website:  </p>
+                            <p>Mail sent 21.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>Central Social Welfare Board</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address: B-12, New Delhi, Delhi - 110001 (Qutab Institutional Area) | Website: <a href="http://www.cswb.gov.in/" target="_blank">http://www.cswb.gov.in/</a></p>
+                        </li>
+
+                        
+                        <!-- Repeat for other 9 companies -->
+                    </ul>
+                </div>
+                <div class="location" id="okhla1">
+                    <h3>Okhla Industrial Area Phase 1</h3>
+                    <ul>
+                        <li>
+                            <h4>SiS Group Enterprises</h4>
+                            <p>Email: mediarelations@sisindia.com, investorrelations@sisindia.com, sisgroup.enquiries@sisindia.com | Contact: +91-11-4646 4444/ 4646 5555</p>
+                            <p>Address: A-28 & 29, Phase 1, Okhla Industrial Area, New Delhi -110 020 | Website: <a href="https://sisindia.com/" target="_blank">https://sisindia.com/</a></p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>Fashion Tech</h4>
+                            <p>Email: info@fashiontech.in | Contact: +91-11-41610339</p>
+                            <p>Address: A-32, Phase-I, Okhla Industrial Area, New Delhi, Delhi 110020 | Website: <a href="https://fashiontech.in/" target="_blank">https://fashiontech.in/</a></p>
+                        </li>
+                        <li>
+                            <h4>Vishvakarma MFG. Co. PVT. LTD</h4>
+                            <p>Email: vishvakarmaengineering007@gmail.com, vmcplpunch@yahoo.co.in | Contact: +91-9818838988</p>
+                            <p>Address: A-31 & A-38 Okhla Industrial Area Phase-1, New Delhi-110020 | Website:</p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>Bliss By Anju</h4>
+                            <p>Email: info@blissbyanju.com | Contact: +917982679992</p>
+                            <p>Address: 1st Floor, A, 16, Pocket A, Okhla Phase I, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://blissbyanju.com/" target="_blank">https://blissbyanju.com/</a></p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>Mitsubishi Electric</h4>
+                            <p>Email: | Contact: </p>
+                            <p>Address: | Website: </p>
+                        </li>
+                        <li>
+                            <h4>FDC Limited</h4>
+                            <p>Email: delhi@fdcindia.com | Contact: 011-41036451</p>
+                            <p>Address: A-41 Okhla Industrial Area Phase-1, New Delhi-110020 | Website: </p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>HD Consortium India Ltd.</h4>
+                            <p>Email: | Contact: 011 40527276</p>
+                            <p>Address: A-11 First Floor Okhla Industrial Area Phase-1, New Delhi-110020 | Website: <a href="http://www.hdindia.com" target="_blank">www.hdindia.com</a></p>
+                        </li>
+                        <li>
+                            <h4>P.C. LAMINATIONS</h4>
+                            <p>Email: info@pclam.in | Contact: 011-41018886</p>
+                            <p>Address: A-43, Okhla Industrial Area Phase-1, New Delhi-110020 | Website: <a href="https://pclam.in/" target="_blank">https://pclam.in/</a></p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>TELcore- Telecore Technologies Pvt. Ltd.</h4>
+                            <p>Email: telcoredealership@gmail.com | Contact: 011-40625543</p>
+                            <p>Address: B-221, 3rd Floor, Okhla Industrial Area Phase-1, New Delhi-110020 | Website: <a href="https://telcore.in/" target="_blank">https://telcore.in/</a></p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>METROPOL</h4>
+                            <p>Email: | Contact: </p>
+                            <p>Address: B-161 Okhla Industrial Area Phase-1, New Delhi-110020 | Website: </p>
+                        </li>
+                        <li>
+                            <h4>MICROPOLO OVERSEAS PRIVATE LIMITED</h4>
+                            <p>Email: sourabhkhanna@kundalglobal.com | Contact: 011-40817219</p>
+                            <p>Address: B-133, Okhla Industrial Area Phase-1, New Delhi-110020 | Website: </p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>FOURTREK Healthcare Pvt. Ltd</h4>
+                            <p>Email: info@fourtrek.com | Contact: +91 72270 34750, +91 72270 34751</p>
+                            <p>Address: C-100, Okhla Industrial Area Phase-1, New Delhi-110020 | Website: <a href="http://www.fourtek.com" target="_blank">www.fourtek.com</a></p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>MEDDROID</h4>
+                            <p>Email: info@meddroidpharma.com | Contact: +91 11 49042774</p>
+                            <p>Address: A-47, First Floor Okhla Industrial Area Phase-1, New Delhi-110020 | Website: <a href="http://www.meddroidpharma.com" target="_blank">www.meddroidpharma.com</a></p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>R.M.P FAB SOURCING (P) LTD.</h4>
+                            <p>Email: info@rmpgroup.in, rmp@rmpgroup.in | Contact: </p>
+                            <p>Address: A-51, First Floor Okhla Industrial Area Phase-1, New Delhi-110020 | Website: <a href="http://rmpgroup.com" target="_blank">http://rmpgroup.com</a></p>
+                        </li>
+                        <li>
+                            <h4>BLUE STAR</h4>
+                            <p>Email: | Contact: </p>
+                            <p>Address: | Website: </p>
+                        </li>
+                        <li>
+                            <h4>Four stud private limited</h4>
+                            <p>Email: | Contact: </p>
+                            <p>Address: A-52, 2ND FLOOR Okhla Industrial Area Phase-1, New Delhi-110020 | Website: </p>
+                        </li>
+                        <li>
+                            <h4>UTC OVERSEAS INDIA PRIVATE LIMITED</h4>
+                            <p>Email: info@utcoverseas.com | Contact: 011-40685171-73</p>
+                            <p>Address: B-177 DDA Sheds Okhla Industrial Area Phase-1, New Delhi-110020 | Website: </p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>PLEASANT LOGISTIC PVT. LTD.</h4>
+                            <p>Email: | Contact: 9811002036</p>
+                            <p>Address: B-176, UGF(First Floor) DDA Shed, Okhla Industrial Area Phase-1, New Delhi-110020 | Website: </p>
+                        </li>
+                        <li>
+                            <h4>SPEEDAGE SPEEDAGE ENGINEERS (INDIA) PVT. LTD.</h4>
+                            <p>Email: info@speedageengineers.com | Contact: 9311333117</p>
+                            <p>Address: C-94, DDA Sheds, Pocket A, Okhla Phase I, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.speedageengineers.com" target="_blank">https://www.speedageengineers.com</a></p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>AMIT PRINTER & PACKAGERS</h4>
+                            <p>Email: amit@appasia.in | Contact: 011 43073739</p>
+                            <p>Address: B-105, DDA Shades, Okhla Industrial Area Phase-1, New Delhi-110020 | Website: <a href="http://www.appasia.in" target="_blank">www.appasia.in</a></p>
+                            <p>Mail sent 26.6.2024</p>
+                        </li>
+                        <li>
+                            <h4>The PRINT NXT</h4>
+                            <p>Email: | Contact: </p>
+                            <p>Address: | Website: </p>
+                        </li>
+                        <li>
+
+                            <li>
+                                <h4>Rarelane Reserve</h4>
+                                <p>Email: info@rarelanereserve.com, yogesh@wonderelectricals.com | Contact: +91 9810492452, 9810492435, +91 981110669</p>
+                                <p>Address: B-115 Ground Floor DDA Shades, Okhla Industrial Area Phase-1, New Delhi-110020 | Website: <a href="https://rarelanereserve.com" target="_blank">https://rarelanereserve.com</a></p>
+                            </li>
+                            
+                            <li>
+                                <h4>THYMEX Healthcare</h4>
+                                <p>Email:  | Contact: </p>
+                                <p>Address: B-116, DDA Shades, Okhla Industrial Area Phase-1, New Delhi-110020 | Website: </p>
+                            </li>
+                            
+                            <li>
+                                <h4>SONA- SONAFINE CORPORATION PRIVATE LIMITED</h4>
+                                <p>Email: info@sonacommercial.com | Contact: +91 9205877662</p>
+                                <p>Address: B-247, Okhla Industrial Area Phase 1, New Delhi-110020 | Website: <a href="https://www.sonapapers.com" target="_blank">https://www.sonapapers.com</a></p>
+                            </li>
+                            
+                            <li>
+                                <h4>NIVEDIT @ UDAY PANDE CONSULTANTS</h4>
+                                <p>Email:  | Contact: +91 11 46818113</p>
+                                <p>Address: B-224, Okhla Industrial Area, Phase 1, New Delhi 110020 | Website: </p>
+                            </li>
+                            
+                            <li>
+                                <h4>WARWICK</h4>
+                                <p>Email: Info@enpointeadwisers.com | Contact: 011-40421835 / 0124-4068006</p>
+                                <p>Address: 502, B-225, Okhla Industrial Area, Phase-1, New Delhi (110020) | Website: <a href="https://enpointeadwisers.com/" target="_blank">https://enpointeadwisers.com/</a></p>
+                            </li>
+                            
+                            <li>
+                                <h4>M/S SONANSH CREATIONS PVT. LTD.</h4>
+                                <p>Email: ravinder@skc.co.in | Contact: </p>
+                                <p>Address: B-222, OKHLA INDUSTRIAL AREA PHASE 1, NEW DELHI 110020 | Website: <a href="https://www.zaubacorp.com/company/SONANSH-CREATIONS-PRIVATE-LIMITED/U17100DL2008PTC177878" target="_blank">https://www.zaubacorp.com/company/SONANSH-CREATIONS-PRIVATE-LIMITED/U17100DL2008PTC177878</a></p>
+                            </li>
+                            
+                            <li>
+                                <h4>POWERTRON PRODUCTS PVT. LTD.</h4>
+                                <p>Email: dineshsharma@powertron.co.in, sales@powertron.co.in | Contact: 011 47667000</p>
+                                <p>Address: B-163, OKHLA INDUSTRIAL AREA PHASE 1 NEW DELHI 110020 | Website: <a href="http://www.powertron.co.in" target="_blank">http://www.powertron.co.in</a></p>
+                            </li>
+                            
+                            <li>
+                                <h4>Sundeep Electricals Pvt. Ltd.</h4>
+                                <p>Email:  | Contact: </p>
+                                <p>Address: C-118, Okhla Industrial Area, Phase 1 New Delhi 110020 | Website: </p>
+                            </li>
+                            
+                            <li>
+                                <h4>JANAKSONS WaterNext SOLUTIONS</h4>
+                                <p>Email: mmohan@janaksons.com | Contact: +91 98 9910 6800, +91 98 9910 6806</p>
+                                <p>Address: c-117, Okhla Industrial Area, Phase 1 New Delhi 110020 | Website: </p>
+                            </li>
+                            
+                        <!-- Repeat for other 9 companies -->
+                    </ul>
+                </div>
+                <div class="location" id="okhla2">
+                    <h3>Okhla Industrial Area Phase 2</h3>
+                    <ul>
+
+                        <li>
+                            <h4>Ornate Solar</h4>
+                            <p>Email: info@ornatesolar.com | Contact:  +91-11-4353-6666</p>
+                            <p>Address: A-87, Okhla Phase 2, New Delhi - 110020 | Website: <a href="https://ornatesolar.com/" target="_blank">https://ornatesolar.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Paramount Products Private Limited</h4>
+                            <p>Email: paramount@paramountproducts.in | Contact: +(91)-(11)-67777000</p>
+                            <p>Address: A-55, Block A, Okhla Phase II, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.paramountproducts.in/" target="_blank">https://www.paramountproducts.in/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>BeatO</h4>
+                            <p>Email: contact@beatoapp.com | Contact: +917863023286</p>
+                            <p>Address: A-83, SECOND FLOOR, OKHLA INDUTRIAL AREA PHASE-2, NEW DELHI-110020 | Website: <a href="https://www.beatoapp.com/" target="_blank">https://www.beatoapp.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>RAMNATH INDUSTRIAL PRIVATE LIMITED</h4>
+                            <p>Email: ramnathindustriespvtltd@gmail.com | Contact: </p>
+                            <p>Address: A-64, SECOND FLOOR, OKHLA INDUTRIAL AREA PHASE-2, NEW DELHI-110020 | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Plaza wires Limited- Plaza Cables Electric Private Limited </h4>
+                            <p>Email: id.compliance@plazawires.in | Contact: 011-66369696</p>
+                            <p>Address: A-74, SECOND FLOOR, OKHLA INDUTRIAL AREA PHASE-2, NEW DELHI-110020 | Website: <a href="https://www.plazawires.in/" target="_blank">https://www.plazawires.in/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Annupoorna Industrial Corporation</h4>
+                            <p>Email: N/A | Contact: 011-26383231</p>
+                            <p>Address: A-90, SECOND FLOOR, OKHLA INDUTRIAL AREA PHASE-2, NEW DELHI-110020 | Website: N/A </p>
+                        </li>
+                        
+                        <li>
+                            <h4>VINTAGE - Vintage Marketing Pvt. Ltd.</h4>
+                            <p>Email:  | Contact: +91 1143101234</p>
+                            <p>Address:  | Website: <a href="wyvintage.com" target="_blank">wyvintage.com</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>KIA Service Jayanti Motors Pvt. Ltd.</h4>
+                            <p>Email: mayak.saluja@jayantikia.in , servicehead@jayantikia.in , servicemanager@jayantikia.in, ccm.service@jayantikia.in, bodyshopmanager@jayantikia.in</p>
+                            <p>Contact: 8800021423, 8800021460, 8800021431, 8800021465, 9582047291</p>
+                            <p>Address: E-41,2 & 3 Okhla Industrial Area, Phase-2, New Delhi-110020 | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Eurofins</h4>
+                            <p>Email:  care@spectro.in | Contact: 011 4052 2000</p>
+                            <p>Address: E-41, Okhla Industrial Area, Phase-2, New Delhi-110020 | Website: <a href="https://www.eurofins.in/industrial-product-testing/spectro/" target="_blank">https://www.eurofins.in/industrial-product-testing/spectro/</a></p>
+                        </li>
+                        <li>
+                            <h4>Medika Bazaar</h4>
+                            <p>Email:  | Contact: 079 4805 8625</p>
+                            <p>Address: E-41/4, Pocket D, Okhla Phase II, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.medikabazaar.com/" target="_blank">https://www.medikabazaar.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Monarch Globle workspace crafted</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Lucas Indian Service</h4>
+                            <p>Email: lis@lismail.in | Contact: 011-26384884, 26384885</p>
+                            <p>Address: E-42/1, Okhla Industrial Area, Phase-2, New Delhi-110020 | Website: <a href="https://www.lucas-service.com/" target="_blank">https://www.lucas-service.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>H.R. INTERNATIONAL</h4>
+                            <p>Email: info@hrinternational.in | Contact: +91 9319915171</p>
+                            <p>Address: E-46/4, Okhla Industrial Area, Phase-2, New Delhi-110020 | Website: <a href="www.hrinternational.in" target="_blank">www.hrinternational.in</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Golden Locks</h4>
+                            <p>Email: mail@goldenlocks.com | Contact: +91 9513783831 </p>
+                            <p>Address: E-45/4, Okhla Industrial Area, Phase-2, New Delhi-110020 | Website: <a href="https://www.goldenlocks.com/" target="_blank">https://www.goldenlocks.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>GEONIX INTERNATIONAL (P) LTD</h4>
+                            <p>Email: care@geonix.in,  service@geonix.in, contact@geonix.in | Contact: 8920896093</p>
+                            <p>Address: E-45/3, Okhla Industrial Area, Phase-2, New Delhi-110020 | Website: <a href="https://geonix.in/" target="_blank">https://geonix.in/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>OHI</h4>
+                            <p>Email: info@outsourcinghubindia.com, sales@outsourcinghubindia.com | Contact: +91 9716260902</p>
+                            <p>Address: E-46/8 Okhla Phase-2, New Delhi-110020 | Website: <a href="https://www.outsourcinghubindia.com/" target="_blank">https://www.outsourcinghubindia.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>newgen</h4>
+                            <p>Email: investors@newgensoft.com | Contact: 011-46533200</p>
+                            <p>Address: E44/13, Okhla Phase-2, New Delhi-110020 | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Distil</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Salora International</h4>
+                            <p>Email: info@salora.com, silcare@salora.com | Contact: +91-8527445111</p>
+                            <p>Address: D-13/4, Okhla Industrial Area, Phase-2, New Delhi-110020 | Website: <a href="https://salora.com/overview.php" target="_blank">https://salora.com/overview.php</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Dawn Digital</h4>
+                            <p>Email: enquiry@dawn-digital.in | Contact: 011 4052 7921</p>
+                            <p>Address:  D13/5, 2nd floor, Pocket W, Okhla Phase II, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.dawn-digital.com/" target="_blank">https://www.dawn-digital.com/</a></p>
+                        </li>
+                        
+
+
+
+
+
+                        
+                        <!-- Repeat for other 9 companies -->
+                    </ul>
+                </div>
+                <div class="location" id="okhla3">
+                    <h3>Okhla Industrial Area Phase 3</h3>
+                    <ul>
+
+
+                        <li>
+                            <h4>GB Pant Institute of Technology</h4>
+                            <p>Email:  | Contact: 011 2682 6620</p>
+                            <p>Address: Okhla Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://dseu.ac.in/dseu-okhla-iii-campus/index.html" target="_blank">https://dseu.ac.in/dseu-okhla-iii-campus/index.html</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>IITD Guest House</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Mankind Pharma Limited</h4>
+                            <p>Email: contact@mankindpharma.com | Contact: 011 4684 6700, 011-47476600 </p>
+                            <p>Address: Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.mankindpharma.com/" target="_blank">https://www.mankindpharma.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Centrum Foundation</h4>
+                            <p>Email: info@centralsquarefoundation.org | Contact: 011 2373 7286</p>
+                            <p>Address: 242, Okhla Industrial Estate Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.centralsquarefoundation.org/" target="_blank">https://www.centralsquarefoundation.org/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Amarchand Towers</h4>
+                            <p>Email:  | Contact: +91 11 4159 0700, 4060 6060</p>
+                            <p>Address: Amarchand Towers, 216, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.amsshardul.com/" target="_blank">https://www.amsshardul.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Trimaster</h4>
+                            <p>Email: info@trimaster.co.in | Contact: +91 6904 9000-09</p>
+                            <p>Address: 222, Okhla Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="www.trimaster.co.in" target="_blank">www.trimaster.co.in</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Ahuja Radios</h4>
+                            <p>Email: marketing@ahujaradios.com | Contact:  011 2683 1549</p>
+                            <p>Address: 215, Okhla Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.ahujaradios.com/" target="_blank">https://www.ahujaradios.com/</a></p>
+                        </li>
+
+                        <li>
+                            <h4>Span India 220</h4>
+                            <p>Email: admin@spanindialtd.com | Contact:  011 4719 0000</p>
+                            <p>Address: 220, Okhla Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.ahujaradios.com/" target="_blank">https://www.ahujaradios.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Medi Buddy V Health</h4>
+                            <p>Email: customerservice@iho.in | Contact: 011 4929 4466</p>
+                            <p>Address: 213- B, Okhla Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.vhealth.io/" target="_blank">https://www.vhealth.io/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Lalita Dolls</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address: 217- B, Okhla Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://lalithadolls.co.in/" target="_blank">https://lalithadolls.co.in/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Cyro Star</h4>
+                            <p>Email:  | Contact: 011 4019 2306</p>
+                            <p>Address: C, 105, Okhla Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://cryostar.com/" target="_blank">https://cryostar.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Laxmi</h4>
+                            <p>Email:  | Contact: 9716079543</p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>PCI India- Project Concern International India</h4>
+                            <p>Email: infoindia@pciglobal.in | Contact:011 46058888</p>
+                            <p>Address: F-87, Okhla Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://pciglobal.in/" target="_blank">https://pciglobal.in/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>EI - Established India</h4>
+                            <p>Email: delhi@eigroup.in | Contact: 011 42795000, +91 98110 78179</p>
+                            <p>Address: C-103, Okhla Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.exhibitionsindia.com/" target="_blank">https://www.exhibitionsindia.com/</a></p>
+                        </li>
+
+                        <li>
+                            <h4>ESC House - Electronics & Computer Software Export Promotion Council</h4>
+                            <p>Email: info@escindia.com | Contact: +91 11 47480000</p>
+                            <p>Address: 155, Okhla Phase 3 Rd, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020 | Website: <a href="https://www.exhibitionsindia.com/" target="_blank">https://www.exhibitionsindia.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Alstonia</h4>
+                            <p>Email: kapil.sharma@astoniaculsulting.com | Contact: +91-9999301084, 011-46588392</p>
+                            <p>Address: 249/A Okhla Industrial Estate Phase- III, New Delhi-110020 | Website: <a href="https://alstoniaconsulting.com/" target="_blank">https://alstoniaconsulting.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>ELCINA  Electronic Industries Association of India</h4>
+                            <p>Email: info@elcina.com | Contact:  011 4161 5985</p>
+                            <p>Address: Elcina House, 422,  Okhla Industrial Estate Phase- III, New Delhi-110020 | Website: <a href="https://elcina.com/" target="_blank">https://elcina.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Value 360</h4>
+                            <p>Email: kunal@value360india.com, vasundhara@value360india.com | Contact: 092666 73177</p>
+                            <p>Address: 43B, Okhla Industrial Estate Phase- III, New Delhi-110020 | Website: <a href="https://www.value360india.com/" target="_blank">https://www.value360india.com/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Cloud Connected Communication</h4>
+                            <p>Email: info@cloud-connect.in | Contact: 082328 23823</p>
+                            <p>Address: 59, Okhla Industrial Estate Phase- III, New Delhi-110020 | Website: <a href="https://cloudconnect.in/" target="_blank">https://cloudconnect.in/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Bio Merieux</h4>
+                            <p>Email: customercare.india@biomerieux.com | Contact: 011 4209 8800</p>
+                            <p>Address: 43A, Okhla Industrial Estate Phase- III, New Delhi-110020 | Website: <a href="https://www.biomerieuxindia.in/" target="_blank">https://www.biomerieuxindia.in/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Leela Separator Pvt 153</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address: 153, Okhla Industrial Estate Phase- III, New Delhi-110020 | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>F - Seventy 3</h4>
+                            <p>Email:  | Contact: 9810066373, 9810023435</p>
+                            <p>Address:  | Website: </p>
+                        </li>
+
+
+                        <li>
+                            <h4>INFO TECH PARK</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address: 211, Okhla Industrial Estate Phase- III, New Delhi-110020 | Website: <a href="https://http//www.baidyanath.org/" target="_blank">https://http//www.baidyanath.org/</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Marketxcel</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Bada Buisness</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>ADFACTORS</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>SMPP</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>DIDWANIA COMPRESSORS</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Morpho. 41</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Glatt</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Ardanuy</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Employees' State Insaurance Dispensary</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>DHL</h4>
+                            <p>Email: expressdeloie@dhl.com, piyush.arora@dhl.com | Contact: +91 (11) 6661 0778</p>
+                            <p>Address: Plot No, 40 Phase 3, Okhla Industrial Estate, Near Modi Mill, New Delhi-110020 | Website: <a href="www.dhl.co.in" target="_blank">www.dhl.co.in</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Legacy</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>NIPPON PAINT</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Manika Motors India LLP</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>IDOM</h4>
+                            <p>Email: India@IDOM.com | Contact: 011-41612482</p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Exclusive Network</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>VLS Finance Ltd.</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Abbott vascular</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Hero Enterprises</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>DCJ GROUP</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+
+                        <li>
+                            <h4>74 (under construction)</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>PSB Law officers panag & BABU</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>AHLAWAT & ASSOCIAES</h4>
+                            <p>Email: avnish@ahlawatassociates.in | Contact: +91 9810134741</p>
+                            <p>Address: Plot No 66, #The Hub, Okhla Phase 3, Industrial Estate, New Delhi 110020, India | Website: <a href="www.ahlawatassociates.com" target="_blank">www.ahlawatassociates.com</a></p>
+                        </li>
+                        
+                        <li>
+                            <h4>Warner bikbok carpings</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>Ki Mobility Solutions Private Limited</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>JAN SAHAS FOUNDATION</h4>
+                            <p>Email:  | Contact: </p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        
+                        <li>
+                            <h4>IPMS - Innovative Project Management Services Pvt. LTD.</h4>
+                            <p>Email:  | Contact: 011-42332244</p>
+                            <p>Address:  | Website: </p>
+                        </li>
+                        <!-- Repeat for other 9 companies -->
+                    </ul>
+                </div>
+            </section>
+        </main>
+        
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
